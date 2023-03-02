@@ -16,3 +16,38 @@ Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-sq2jb2-d7cfkk)
+
+## Author
+
+- [@BuathierTom](https://www.github.com/BuathierTom)
+
+
+## Installation
+
+Pour installer le projet, il faut faire cette commande dans le répertoire courant de votre projet :
+
+```bash
+    cd my-project
+    npm install -g @angular/cli
+    npm install my-project
+```
+
+Pour lancer le serveur sur `Localhost:4200`, faire cette commande dans le répertoire courant :
+
+```bash
+    ng serve
+```
+
+
+    
+## Documentation
+
+Suivi d'un tuto qui provient de [Angular.io](https://angular.io/start).
+
+
+## License
+
+
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-sq2jb2-d7cfkk)
+
