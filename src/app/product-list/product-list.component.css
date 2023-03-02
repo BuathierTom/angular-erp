@@ -1,3 +1,21 @@
+ol { 
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.button_foufou{
+    background-color: gray; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 
 
 /*

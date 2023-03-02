@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../products';
 import { ProductService } from '../product.service';
+import { Fournisseur, fournisseurs } from '../fournisseur';
 
 @Component({
   selector: 'app-product-list',
@@ -9,6 +10,8 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
+
+  fournisseurs : Fournisseur[] = fournisseurs;
   products : Product[]=[];
 
   constructor(private productService: ProductService) {}
@@ -22,6 +25,11 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.productService.getProducts().subscribe(data => this.products = data);
+  }
+
+  setFournisseur(fournisseurId : number) {
+    this.productService.setFournisseur(fournisseurId);
     this.productService.getProducts().subscribe(data => this.products = data);
   }
 }

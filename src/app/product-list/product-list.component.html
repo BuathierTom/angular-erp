@@ -1,3 +1,11 @@
+<ol *ngFor="let fournisseur of fournisseurs">
+  <li>
+    <button class="button_foufou" type="button" (click)="setFournisseur(fournisseur.id)">
+      {{fournisseur.name}}
+    </button>
+  </li>
+</ol>
+
 <h2>Produits</h2>
 
 <div *ngFor="let product of products">

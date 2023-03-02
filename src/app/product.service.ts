@@ -25,4 +25,10 @@ export class ProductService {
       return of(this.products);
     }
   }
+
+  setFournisseur(fournisseurId : number) {
+    this.fournisseurId = fournisseurId.toString();
+    this.products = [];
+  }
+
 }
